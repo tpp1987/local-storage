@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="shortcut icon" href="tp-favicon.png" type="image/png">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <title>Local Storage Test | Tom Parkes</title>
+        <meta name="description" content="A test project using local storage with JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+
+        <header class="container">
+            <h1>Local Storage Test</h1>
+        </header>
+
+        <main class="container">
+
+            <div id="welcome-message"></div>
+            <section id="questions">
+                <form id="questions-form">
+                    <label for="firstName">What's your first name?</label>
+                    <input name="firstName" type="text" placeholder="Your first name">
+
+                    <label for="age">How old are you?</label>
+                    <input name="age" type="number" placeholder="Your age">
+
+                    <label for="favColour">What's your favourite colour?</label>
+                    <input name="favColour" type="text" placeholder="Your favourite colour">
+
+                    <button>Submit answers</button>
+                </form>
+
+                <div id="answers">
+                    <p>Here's a little info about yourself. Just in case you&nbsp;forgot&hellip;</p>
+                    <h2>Your age</h2>
+                    <p id="answers-age"></p>
+                    <h2>Your favourite colour</h2>
+                    <p id="answers-colour"></p>
+                    <h2>Want to clear your data?</h2>
+                    <button id="clear-data">Clear data</button>
+                </div>
+            </section>
+
+            <aside class="container">
+                <h2>Privacy</h2>
+                <p>This app stores any data that you submit in your browser's local&nbsp;storage.</p>
+                <p>If you're not happy for it to do so, please don't submit any&nbsp;data!</p>
+                <p>If you do submit data and would like to delete it, simply clear local storage for this&nbsp;site.</p>
+                <p>None of the information you submit is stored externally, so your privacy is&nbsp;protected.</p>
+            </aside>
+        </main>
+
+        
+
+        <footer class="container">
+            <p>An app by <a href="https://twitter.com/tomparkes1987" target="_blank">Tom Parkes</a></p>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="scripts/main.js"></script>
+
+    </body>
+
+</html>
